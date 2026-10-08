@@ -1,0 +1,805 @@
+[
+ {
+  "id": "pmkisan",
+  "track": "f",
+  "name": [
+   "PM-KISAN",
+   "पीएम-किसान",
+   "பிஎம்-கிசான்"
+  ],
+  "benefit": [
+   "₹6,000 a year in 3 instalments",
+   "₹6,000 प्रति वर्ष, 3 किस्तों में",
+   "ஆண்டுக்கு ₹6,000, 3 தவணைகளில்"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "land"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "kyc",
+   "ver",
+   "trk"
+  ],
+  "url": "https://pmkisan.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "farmer",
+    "label": [
+     "Farmer",
+     "किसान",
+     "விவசாயி"
+    ]
+   },
+   {
+    "field": "land",
+    "op": "gt",
+    "value": 0,
+    "label": [
+     "Owns farmland",
+     "खेती की जमीन है",
+     "விவசாய நிலம் உள்ளது"
+    ]
+   }
+  ],
+  "cash": 6000,
+  "about": [
+   "A central scheme that gives small and marginal farmer families direct income support. The money is paid straight into the bank account in three equal instalments of ₹2,000 every year.",
+   "छोटे और सीमांत किसान परिवारों के लिए केंद्र सरकार की आय सहायता योजना। हर साल ₹2,000 की तीन बराबर किस्तों में पैसा सीधे बैंक खाते में आता है।",
+   "சிறு, குறு விவசாயக் குடும்பங்களுக்கு நேரடி வருமான ஆதரவு தரும் மத்திய அரசுத் திட்டம். ஆண்டுதோறும் ₹2,000 வீதம் மூன்று சம தவணைகளில் பணம் நேரடியாக வங்கிக் கணக்கில் செலுத்தப்படும்."
+  ]
+ },
+ {
+  "id": "kcc",
+  "track": "f",
+  "name": [
+   "Kisan Credit Card",
+   "किसान क्रेडिट कार्ड",
+   "கிசான் கடன் அட்டை"
+  ],
+  "benefit": [
+   "Low-interest loans for seeds, fertiliser and farm costs",
+   "बीज, खाद और खेती के खर्च के लिए कम ब्याज पर ऋण",
+   "விதை, உரம் மற்றும் விவசாயச் செலவுகளுக்குக் குறைந்த வட்டியில் கடன்"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "land",
+   "photo"
+  ],
+  "steps": [
+   "bankv",
+   "ver",
+   "loan",
+   "ren"
+  ],
+  "url": "https://pmkisan.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "farmer",
+    "label": [
+     "Farmer",
+     "किसान",
+     "விவசாயி"
+    ]
+   }
+  ],
+  "about": [
+   "A credit card for farmers that gives quick, low-interest short-term loans for seeds, fertiliser, pesticides and other farm costs. Prompt repayment can earn extra interest relief.",
+   "किसानों के लिए क्रेडिट कार्ड, जिससे बीज, खाद, कीटनाशक और खेती के अन्य खर्चों के लिए कम ब्याज पर जल्दी अल्पकालीन ऋण मिलता है। समय पर चुकाने पर ब्याज में अतिरिक्त राहत मिल सकती है।",
+   "விதை, உரம், பூச்சிக்கொல்லி போன்ற விவசாயச் செலவுகளுக்குக் குறைந்த வட்டியில் விரைவாகக் குறுகிய காலக் கடன் வழங்கும் விவசாயிகளுக்கான கடன் அட்டை. சரியான நேரத்தில் திருப்பிச் செலுத்தினால் கூடுதல் வட்டிச் சலுகை கிடைக்கலாம்."
+  ]
+ },
+ {
+  "id": "pmfby",
+  "track": "f",
+  "name": [
+   "PM Fasal Bima Yojana",
+   "पीएम फसल बीमा योजना",
+   "பிரதமரின் பயிர்க் காப்பீட்டுத் திட்டம்"
+  ],
+  "benefit": [
+   "Crop insurance at a low premium",
+   "कम प्रीमियम पर फसल बीमा",
+   "குறைந்த பிரீமியத்தில் பயிர்க் காப்பீடு"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "land",
+   "crop"
+  ],
+  "steps": [
+   "ddl",
+   "form",
+   "csc",
+   "trk"
+  ],
+  "url": "https://pmfby.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "farmer",
+    "label": [
+     "Farmer",
+     "किसान",
+     "விவசாயி"
+    ]
+   },
+   {
+    "field": "land",
+    "op": "gt",
+    "value": 0,
+    "label": [
+     "Owns farmland",
+     "खेती की जमीन है",
+     "விவசாய நிலம் உள்ளது"
+    ]
+   }
+  ],
+  "about": [
+   "Crop insurance that protects farmers against loss from drought, flood, pests and unseasonal rain. Farmers pay a small premium and the government pays the rest.",
+   "सूखा, बाढ़, कीट और बेमौसम बारिश से फसल के नुकसान से किसानों को सुरक्षा देने वाला फसल बीमा। किसान थोड़ा प्रीमियम देते हैं, बाकी सरकार देती है।",
+   "வறட்சி, வெள்ளம், பூச்சித் தாக்குதல், பருவம் தவறிய மழை போன்றவற்றால் ஏற்படும் இழப்பிலிருந்து விவசாயிகளைப் பாதுகாக்கும் பயிர்க் காப்பீடு. விவசாயிகள் சிறிய பிரீமியம் செலுத்தினால் மீதியை அரசு ஏற்கும்."
+  ]
+ },
+ {
+  "id": "kusum",
+  "track": "f",
+  "name": [
+   "PM-KUSUM (solar pump)",
+   "पीएम-कुसुम (सोलर पंप)",
+   "பிஎம்-குசும் (சூரிய ஒளி பம்ப்)"
+  ],
+  "benefit": [
+   "Subsidy on solar irrigation pumps",
+   "सोलर सिंचाई पंप पर सब्सिडी",
+   "சூரிய ஒளிப் பாசன பம்ப்புகளுக்கு மானியம்"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "land",
+   "photo"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "ver",
+   "trk"
+  ],
+  "url": "https://pmkusum.mnre.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "farmer",
+    "label": [
+     "Farmer",
+     "किसान",
+     "விவசாயி"
+    ]
+   },
+   {
+    "field": "land",
+    "op": "gt",
+    "value": 0,
+    "label": [
+     "Owns farmland",
+     "खेती की जमीन है",
+     "விவசாய நிலம் உள்ளது"
+    ]
+   }
+  ],
+  "about": [
+   "Gives farmers a subsidy to install solar irrigation pumps, which cuts diesel and electricity bills. Extra power can also be sold to the grid in some cases.",
+   "किसानों को सोलर सिंचाई पंप लगाने पर सब्सिडी मिलती है, जिससे डीज़ल और बिजली का खर्च घटता है। कुछ मामलों में अतिरिक्त बिजली ग्रिड को बेची भी जा सकती है।",
+   "சூரிய ஒளிப் பாசன பம்ப் அமைக்க விவசாயிகளுக்கு மானியம் வழங்கி, டீசல் மற்றும் மின்கட்டணச் செலவைக் குறைக்கும் திட்டம். சில சமயங்களில் கூடுதல் மின்சாரத்தை மின் தொகுப்புக்கு விற்கவும் முடியும்."
+  ]
+ },
+ {
+  "id": "css",
+  "track": "s",
+  "name": [
+   "Central Sector Scholarship",
+   "केंद्रीय क्षेत्र छात्रवृत्ति",
+   "மத்தியத் துறை உதவித்தொகை"
+  ],
+  "benefit": [
+   "₹12,000 a year for college students",
+   "कॉलेज छात्रों को ₹12,000 प्रति वर्ष",
+   "கல்லூரி மாணவர்களுக்கு ஆண்டுக்கு ₹12,000"
+  ],
+  "docs": [
+   "aadhaar",
+   "income",
+   "school",
+   "fee",
+   "bank"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "inst",
+   "ver",
+   "trk",
+   "ren"
+  ],
+  "url": "https://scholarships.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "student",
+    "label": [
+     "Student",
+     "विद्यार्थी",
+     "மாணவர்"
+    ]
+   },
+   {
+    "field": "income",
+    "op": "lte",
+    "value": 450000,
+    "label": [
+     "Family income up to ₹4.5 lakh",
+     "पारिवारिक आय ₹4.5 लाख तक",
+     "குடும்ப வருமானம் ₹4.5 லட்சம் வரை"
+    ]
+   }
+  ],
+  "cash": 12000,
+  "about": [
+   "A merit-based scholarship for college and university students from families with limited income. It helps with day-to-day study costs every year.",
+   "सीमित आय वाले परिवारों के कॉलेज और विश्वविद्यालय छात्रों के लिए योग्यता आधारित छात्रवृत्ति। यह हर साल पढ़ाई के रोज़मर्रा के खर्च में मदद करती है।",
+   "குறைந்த வருமானம் உள்ள குடும்பங்களைச் சேர்ந்த கல்லூரி மற்றும் பல்கலைக்கழக மாணவர்களுக்கான தகுதி அடிப்படையிலான உதவித்தொகை. ஒவ்வொரு ஆண்டும் படிப்புச் செலவுகளுக்கு உதவுகிறது."
+  ]
+ },
+ {
+  "id": "pms",
+  "track": "s",
+  "name": [
+   "Post-Matric Scholarship (SC/ST)",
+   "पोस्ट-मैट्रिक छात्रवृत्ति (SC/ST)",
+   "பிளஸ் டூவுக்குப் பிந்தைய உதவித்தொகை (SC/ST)"
+  ],
+  "benefit": [
+   "Course fees and maintenance allowance",
+   "कोर्स फीस और भरण-पोषण भत्ता",
+   "படிப்புக் கட்டணம் மற்றும் பராமரிப்புப் படி"
+  ],
+  "docs": [
+   "aadhaar",
+   "caste",
+   "income",
+   "fee",
+   "bank"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "inst",
+   "ver",
+   "trk",
+   "ren"
+  ],
+  "url": "https://scholarships.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "student",
+    "label": [
+     "Student",
+     "विद्यार्थी",
+     "மாணவர்"
+    ]
+   },
+   {
+    "field": "cat",
+    "op": "in",
+    "value": [
+     "SC",
+     "ST"
+    ],
+    "label": [
+     "SC or ST category",
+     "SC या ST वर्ग",
+     "SC அல்லது ST பிரிவு"
+    ]
+   },
+   {
+    "field": "income",
+    "op": "lte",
+    "value": 250000,
+    "label": [
+     "Family income up to ₹2.5 lakh",
+     "पारिवारिक आय ₹2.5 लाख तक",
+     "குடும்ப வருமானம் ₹2.5 லட்சம் வரை"
+    ]
+   }
+  ],
+  "about": [
+   "Pays course fees and a monthly maintenance allowance for SC and ST students studying after Class 10, so that cost does not stop them from continuing education.",
+   "10वीं के बाद पढ़ रहे SC और ST छात्रों की कोर्स फीस और मासिक भरण-पोषण भत्ता देती है, ताकि खर्च उनकी पढ़ाई में बाधा न बने।",
+   "10-ஆம் வகுப்புக்குப் பிறகு படிக்கும் SC மற்றும் ST மாணவர்களுக்குப் படிப்புக் கட்டணத்தையும் மாதாந்திரப் பராமரிப்புப் படியையும் வழங்கி, செலவு காரணமாகப் படிப்பு தடைபடாமல் பார்த்துக்கொள்ளும்."
+  ]
+ },
+ {
+  "id": "pragati",
+  "track": "s",
+  "name": [
+   "Pragati Scholarship for girls",
+   "प्रगति छात्रवृत्ति (छात्राओं के लिए)",
+   "பிரகதி உதவித்தொகை (மாணவிகளுக்கு)"
+  ],
+  "benefit": [
+   "Up to ₹50,000 a year for girls in technical courses",
+   "तकनीकी कोर्स में छात्राओं को ₹50,000 प्रति वर्ष तक",
+   "தொழில்நுட்பப் படிப்பில் மாணவிகளுக்கு ஆண்டுக்கு ₹50,000 வரை"
+  ],
+  "docs": [
+   "aadhaar",
+   "income",
+   "fee",
+   "school",
+   "bank"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "inst",
+   "ver",
+   "trk"
+  ],
+  "url": "https://scholarships.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "student",
+    "label": [
+     "Student",
+     "विद्यार्थी",
+     "மாணவர்"
+    ]
+   },
+   {
+    "field": "gender",
+    "op": "eq",
+    "value": "female",
+    "label": [
+     "Girl student",
+     "छात्रा",
+     "மாணவி"
+    ]
+   },
+   {
+    "field": "course",
+    "op": "eq",
+    "value": "tech",
+    "label": [
+     "Technical course (engineering, diploma, pharmacy)",
+     "तकनीकी कोर्स (इंजीनियरिंग, डिप्लोमा, फार्मेसी)",
+     "தொழில்நுட்பப் படிப்பு (பொறியியல், டிப்ளமோ, மருந்தியல்)"
+    ]
+   },
+   {
+    "field": "income",
+    "op": "lte",
+    "value": 800000,
+    "label": [
+     "Family income up to ₹8 lakh",
+     "पारिवारिक आय ₹8 लाख तक",
+     "குடும்ப வருமானம் ₹8 லட்சம் வரை"
+    ]
+   }
+  ],
+  "about": [
+   "Supports girl students in AICTE-approved technical courses such as engineering, diploma and pharmacy, to encourage more women to enter technical education.",
+   "इंजीनियरिंग, डिप्लोमा और फार्मेसी जैसे AICTE-मान्यता प्राप्त तकनीकी कोर्स में पढ़ने वाली छात्राओं की मदद करती है, ताकि तकनीकी शिक्षा में अधिक महिलाएँ आएँ।",
+   "பொறியியல், டிப்ளமோ, மருந்தியல் போன்ற AICTE அங்கீகாரம் பெற்ற தொழில்நுட்பப் படிப்புகளில் பயிலும் மாணவிகளுக்கு ஆதரவளித்து, தொழில்நுட்பக் கல்வியில் அதிகப் பெண்களை ஊக்குவிக்கும் திட்டம்."
+  ]
+ },
+ {
+  "id": "vidyalaxmi",
+  "track": "s",
+  "name": [
+   "PM Vidyalaxmi Education Loan",
+   "पीएम विद्यालक्ष्मी शिक्षा ऋण",
+   "பிஎம் வித்யாலட்சுமி கல்விக் கடன்"
+  ],
+  "benefit": [
+   "Collateral-free education loan with interest support",
+   "बिना गारंटी शिक्षा ऋण और ब्याज सहायता",
+   "பிணையின்றி கல்விக் கடன் மற்றும் வட்டி உதவி"
+  ],
+  "docs": [
+   "aadhaar",
+   "fee",
+   "school",
+   "income",
+   "bank"
+  ],
+  "steps": [
+   "reg",
+   "form",
+   "ver",
+   "loan"
+  ],
+  "url": "https://pmvidyalaxmi.co.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "student",
+    "label": [
+     "Student",
+     "विद्यार्थी",
+     "மாணவர்"
+    ]
+   },
+   {
+    "field": "income",
+    "op": "lte",
+    "value": 800000,
+    "label": [
+     "Family income up to ₹8 lakh",
+     "पारिवारिक आय ₹8 लाख तक",
+     "குடும்ப வருமானம் ₹8 லட்சம் வரை"
+    ]
+   }
+  ],
+  "about": [
+   "A single window to apply for education loans from many banks. Eligible students get collateral-free loans and interest support for higher studies.",
+   "कई बैंकों से शिक्षा ऋण के लिए आवेदन करने की एक ही खिड़की। पात्र छात्रों को उच्च शिक्षा के लिए बिना गारंटी ऋण और ब्याज सहायता मिलती है।",
+   "பல வங்கிகளின் கல்விக் கடன்களுக்கு ஒரே இடத்தில் விண்ணப்பிக்கும் வசதி. தகுதியுள்ள மாணவர்களுக்கு உயர்கல்விக்குப் பிணையின்றிக் கடனும் வட்டி உதவியும் கிடைக்கும்."
+  ]
+ },
+ {
+  "id": "svanidhi",
+  "track": "e",
+  "name": [
+   "PM SVANidhi",
+   "पीएम स्वनिधि",
+   "பிஎம் ஸ்வநிதி"
+  ],
+  "benefit": [
+   "Loan from ₹10,000 for street vendors",
+   "रेहड़ी-पटरी वालों को ₹10,000 से ऋण",
+   "தெருவோர வியாபாரிகளுக்கு ₹10,000 முதல் கடன்"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "trade"
+  ],
+  "steps": [
+   "csc",
+   "form",
+   "ver",
+   "loan",
+   "ren"
+  ],
+  "url": "https://pmsvanidhi.mohua.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "vendor",
+    "label": [
+     "Street vendor",
+     "रेहड़ी-पटरी वाला",
+     "தெருவோர வியாபாரி"
+    ]
+   }
+  ],
+  "about": [
+   "Gives street vendors a small working-capital loan starting at ₹10,000 without collateral. Repaying on time unlocks a larger loan and rewards for digital payments.",
+   "रेहड़ी-पटरी वालों को बिना गारंटी ₹10,000 से शुरू होने वाला छोटा कार्यशील पूँजी ऋण देती है। समय पर चुकाने पर बड़ा ऋण और डिजिटल भुगतान पर प्रोत्साहन मिलता है।",
+   "தெருவோர வியாபாரிகளுக்குப் பிணையின்றி ₹10,000 முதல் சிறு முதலீட்டுக் கடன் வழங்கும் திட்டம். சரியாகத் திருப்பிச் செலுத்தினால் பெரிய கடனும், டிஜிட்டல் பணப்பரிவர்த்தனைக்கு ஊக்கத்தொகையும் கிடைக்கும்."
+  ]
+ },
+ {
+  "id": "mudra",
+  "track": "e",
+  "name": [
+   "PM Mudra Yojana",
+   "पीएम मुद्रा योजना",
+   "பிஎம் முத்ரா யோஜனா"
+  ],
+  "benefit": [
+   "Business loans up to ₹20 lakh, no collateral",
+   "बिना गारंटी ₹20 लाख तक व्यवसाय ऋण",
+   "பிணையின்றி ₹20 லட்சம் வரை வணிகக் கடன்"
+  ],
+  "docs": [
+   "aadhaar",
+   "pan",
+   "bank",
+   "trade",
+   "plan"
+  ],
+  "steps": [
+   "plan",
+   "bankv",
+   "ver",
+   "loan"
+  ],
+  "url": "https://www.mudra.org.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "in",
+    "value": [
+     "business",
+     "vendor",
+     "artisan",
+     "unemp"
+    ],
+    "label": [
+     "Runs or plans a small business",
+     "छोटा व्यवसाय चलाते / शुरू करते हैं",
+     "சிறு தொழிலை நடத்துகிறார் அல்லது தொடங்கத் திட்டமிடுகிறார்"
+    ]
+   }
+  ],
+  "about": [
+   "Provides collateral-free loans for small and micro businesses in three stages: Shishu, Kishor and Tarun. It can be used to start, run or grow a business.",
+   "छोटे और सूक्ष्म व्यवसायों को तीन चरणों (शिशु, किशोर, तरुण) में बिना गारंटी ऋण देती है। इसे व्यवसाय शुरू करने, चलाने या बढ़ाने में लगाया जा सकता है।",
+   "சிறு, குறு தொழில்களுக்குச் சிசு, கிஷோர், தருண் என மூன்று நிலைகளில் பிணையின்றிக் கடன் வழங்கும் திட்டம். தொழிலைத் தொடங்கவும், நடத்தவும், விரிவாக்கவும் பயன்படுத்தலாம்."
+  ]
+ },
+ {
+  "id": "vishwakarma",
+  "track": "e",
+  "name": [
+   "PM Vishwakarma",
+   "पीएम विश्वकर्मा",
+   "பிஎம் விஸ்வகர்மா"
+  ],
+  "benefit": [
+   "₹15,000 toolkit, skill stipend, cheap loan (one time)",
+   "₹15,000 टूलकिट, प्रशिक्षण भत्ता, सस्ता ऋण",
+   "₹15,000 கருவித்தொகுப்பு, திறன் உதவித்தொகை, குறைந்த வட்டிக் கடன் (ஒருமுறை)"
+  ],
+  "docs": [
+   "aadhaar",
+   "bank",
+   "trade",
+   "photo"
+  ],
+  "steps": [
+   "csc",
+   "kyc",
+   "ver",
+   "trn",
+   "loan"
+  ],
+  "url": "https://pmvishwakarma.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "eq",
+    "value": "artisan",
+    "label": [
+     "Artisan or craftsperson",
+     "कारीगर",
+     "கைவினைஞர்"
+    ]
+   },
+   {
+    "field": "age",
+    "op": "gte",
+    "value": 18,
+    "label": [
+     "Age 18+",
+     "आयु 18+",
+     "வயது 18 மற்றும் அதற்கு மேல்"
+    ]
+   }
+  ],
+  "cash": 15000,
+  "once": true,
+  "about": [
+   "Supports traditional artisans and craftspeople such as carpenters, potters, weavers, tailors and barbers with a toolkit grant, paid skill training and low-interest loans.",
+   "बढ़ई, कुम्हार, बुनकर, दर्जी और नाई जैसे पारंपरिक कारीगरों को टूलकिट सहायता, वेतन सहित कौशल प्रशिक्षण और कम ब्याज पर ऋण देती है।",
+   "தச்சர், குயவர், நெசவாளர், தையல்காரர், முடிதிருத்துவோர் போன்ற பாரம்பரியக் கைவினைஞர்களுக்குக் கருவித்தொகுப்பு உதவி, உதவித்தொகையுடன் கூடிய திறன் பயிற்சி, குறைந்த வட்டிக் கடன் ஆகியவற்றை வழங்கும் திட்டம்."
+  ]
+ },
+ {
+  "id": "pmegp",
+  "track": "e",
+  "name": [
+   "PMEGP",
+   "पीएमईजीपी",
+   "பிஎம்இஜிபி"
+  ],
+  "benefit": [
+   "15-35% subsidy on a new business project",
+   "नए व्यवसाय पर 15-35% सब्सिडी",
+   "புதிய தொழில் திட்டத்துக்கு 15-35% மானியம்"
+  ],
+  "docs": [
+   "aadhaar",
+   "plan",
+   "photo",
+   "bank",
+   "caste"
+  ],
+  "steps": [
+   "plan",
+   "form",
+   "iv",
+   "loan",
+   "trn"
+  ],
+  "url": "https://www.kviconline.gov.in/pmegpeportal",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "in",
+    "value": [
+     "unemp",
+     "business",
+     "artisan",
+     "labour",
+     "vendor",
+     "other"
+    ],
+    "label": [
+     "Wants to start a business",
+     "व्यवसाय शुरू करना चाहते हैं",
+     "தொழில் தொடங்க விரும்புகிறார்"
+    ]
+   },
+   {
+    "field": "age",
+    "op": "gte",
+    "value": 18,
+    "label": [
+     "Age 18+",
+     "आयु 18+",
+     "வயது 18 மற்றும் அதற்கு மேல்"
+    ]
+   }
+  ],
+  "about": [
+   "A credit-linked subsidy for setting up a new micro enterprise in manufacturing or services. The government returns 15 to 35 per cent of the project cost as a subsidy.",
+   "विनिर्माण या सेवा क्षेत्र में नया सूक्ष्म उद्यम शुरू करने के लिए ऋण से जुड़ी सब्सिडी। सरकार परियोजना लागत का 15 से 35 प्रतिशत सब्सिडी के रूप में देती है।",
+   "உற்பத்தி அல்லது சேவைத் துறையில் புதிய குறு நிறுவனத்தைத் தொடங்க, கடனுடன் இணைந்த மானியத் திட்டம். திட்டச் செலவில் 15 முதல் 35 சதவீதத்தை அரசு மானியமாக வழங்குகிறது."
+  ]
+ },
+ {
+  "id": "seedfund",
+  "track": "e",
+  "name": [
+   "Startup India Seed Fund",
+   "स्टार्टअप इंडिया सीड फंड",
+   "ஸ்டார்ட்அப் இந்தியா விதை நிதி"
+  ],
+  "benefit": [
+   "Grant up to ₹20 lakh to prove your idea, loan support beyond",
+   "विचार परखने के लिए ₹20 लाख तक अनुदान",
+   "யோசனையைச் சோதிக்க ₹20 லட்சம் வரை மானியம்"
+  ],
+  "docs": [
+   "aadhaar",
+   "pan",
+   "dpiit",
+   "plan",
+   "bank"
+  ],
+  "steps": [
+   "dpi",
+   "plan",
+   "form",
+   "iv",
+   "trk"
+  ],
+  "url": "https://seedfund.startupindia.gov.in",
+  "rules": [
+   {
+    "field": "occ",
+    "op": "in",
+    "value": [
+     "business",
+     "student",
+     "unemp"
+    ],
+    "label": [
+     "Startup founder",
+     "स्टार्टअप संस्थापक",
+     "ஸ்டார்ட்அப் நிறுவனர்"
+    ]
+   }
+  ],
+  "about": [
+   "Early-stage funding for startups, through approved incubators, to prove a concept, build a prototype or start selling. Larger amounts come as convertible debentures.",
+   "अनुमोदित इनक्यूबेटरों के ज़रिए स्टार्टअप को शुरुआती चरण में विचार परखने, प्रोटोटाइप बनाने या बिक्री शुरू करने के लिए धन मिलता है। बड़ी राशि परिवर्तनीय डिबेंचर के रूप में आती है।",
+   "அங்கீகரிக்கப்பட்ட காப்பகங்கள் (இன்குபேட்டர்கள்) மூலம், ஸ்டார்ட்அப்களுக்குத் தொடக்க நிலையில் யோசனையைச் சோதிக்க, மாதிரி உருவாக்க அல்லது விற்பனையைத் தொடங்க நிதி வழங்கும் திட்டம். பெரிய தொகை மாற்றத்தக்க கடன் பத்திரங்களாக வழங்கப்படும்."
+  ]
+ },
+ {
+  "id": "standup",
+  "track": "e",
+  "name": [
+   "Stand-Up India",
+   "स्टैंड-अप इंडिया",
+   "ஸ்டாண்ட்-அப் இந்தியா"
+  ],
+  "benefit": [
+   "Bank loan of ₹10 lakh to ₹1 crore for SC/ST and women",
+   "SC/ST और महिलाओं को ₹10 लाख से ₹1 करोड़ तक ऋण",
+   "SC/ST மற்றும் பெண்களுக்கு ₹10 லட்சம் முதல் ₹1 கோடி வரை வங்கிக் கடன்"
+  ],
+  "docs": [
+   "aadhaar",
+   "pan",
+   "caste",
+   "plan",
+   "bank"
+  ],
+  "steps": [
+   "plan",
+   "form",
+   "ver",
+   "loan"
+  ],
+  "url": "https://www.standupmitra.in",
+  "rules": [
+   {
+    "op": "any",
+    "label": [
+     "SC/ST or woman",
+     "SC/ST या महिला",
+     "SC/ST அல்லது பெண்"
+    ],
+    "rules": [
+     {
+      "field": "cat",
+      "op": "in",
+      "value": [
+       "SC",
+       "ST"
+      ]
+     },
+     {
+      "field": "gender",
+      "op": "eq",
+      "value": "female"
+     }
+    ]
+   },
+   {
+    "field": "occ",
+    "op": "in",
+    "value": [
+     "unemp",
+     "business",
+     "artisan",
+     "vendor"
+    ],
+    "label": [
+     "New business",
+     "नया व्यवसाय",
+     "புதிய தொழில்"
+    ]
+   }
+  ],
+  "about": [
+   "Helps SC/ST entrepreneurs and women start a new enterprise in manufacturing, services or trading, with a bank loan between ₹10 lakh and ₹1 crore.",
+   "SC/ST उद्यमियों और महिलाओं को विनिर्माण, सेवा या व्यापार में नया उद्यम शुरू करने के लिए ₹10 लाख से ₹1 करोड़ तक बैंक ऋण दिलाती है।",
+   "SC/ST தொழில்முனைவோர் மற்றும் பெண்கள் உற்பத்தி, சேவை அல்லது வணிகத்தில் புதிய நிறுவனம் தொடங்க ₹10 லட்சம் முதல் ₹1 கோடி வரை வங்கிக் கடன் பெற உதவும் திட்டம்."
+  ]
+ }
+]

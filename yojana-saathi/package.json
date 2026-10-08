@@ -1,0 +1,18 @@
+{
+  "name": "yojana-saathi",
+  "version": "3.0.0",
+  "description": "Government scheme finder for 10 citizen categories (English, Hindi, Tamil) with voice interview",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/run.js",
+    "build:data": "python3 tools/build_config.py && python3 tools/build_schemes.py"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

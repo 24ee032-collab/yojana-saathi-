@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yojana Saathi - Government schemes for every citizen of India</title>
+<meta name="description" content="Choose your language and category (farmer, students, widows, unemployed youth, transgender persons, entrepreneurs, ex-servicemen, sports persons, persons with disabilities, senior citizens) and find every government scheme you qualify for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#26307B">
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body class="home">
+<a class="skip" href="#cats" data-t="skip">Skip to main content</a>
+<div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="util">
+  <div class="wrap util-in">
+    <span class="util-note" data-t="notOfficial">Independent citizen-help tool. Not an official government website.</span>
+    <div class="util-tools">
+      <div class="grp" role="group">
+        <button id="fs-" data-ta="fsDec">A-</button><button id="fs0" data-ta="fsNorm">A</button><button id="fs+" data-ta="fsInc">A+</button>
+      </div>
+      <button id="contrast" class="solo" aria-pressed="false" data-t="contrast">High contrast</button>
+    </div>
+  </div>
+</div>
+<header class="head">
+  <div class="wrap head-in">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#173B67"/><path d="M12 30.5 24 11l12 19.5H12Z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M17 30.5h14M20 25h8M24 18v12" stroke="#F2B544" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="36" r="2" fill="#F2B544"/></svg>
+      <div class="brand-copy"><h1 id="ttl">Yojana Saathi</h1><span data-t="brandTag">Public benefits, made clearer</span></div>
+    </div>
+    <nav class="home-nav" aria-label="Main navigation">
+      <a href="#cats" data-t="navExplore">Explore categories</a>
+      <a href="#how" data-t="navHow">How it works</a>
+    </nav>
+    <a class="nav-cta" href="#cats"><span data-t="navStart">Find my schemes</span><span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-t">
+        <p class="eyebrow" data-t="sub"></p>
+        <h2 data-t="homeH"></h2>
+        <p class="hero-p" data-t="homeP"></p>
+        <div class="hero-lang">
+          <span class="hl-l" id="hl-l" data-t="homeLang"></span>
+          <div class="langs big" role="group" aria-labelledby="hl-l">
+            <button id="l-0" class="on" lang="en">English</button><button id="l-1" lang="hi">हिन्दी</button><button id="l-2" lang="ta">தமிழ்</button>
+          </div>
+        </div>
+        <div class="hero-act">
+          <button id="hlisten" class="btn" type="button"><span aria-hidden="true">🔊</span> <span data-t="homeListen"></span></button>
+          <button id="hsay" class="btn pri" type="button"><span aria-hidden="true">🎙</span> <span data-t="homeSay"></span></button>
+        </div>
+        <p id="hmsg" class="hmsg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-strip" aria-label="Service highlights">
+    <div class="wrap proof-grid">
+      <div class="proof-item"><span class="proof-icon" aria-hidden="true">01</span><div><strong data-t="proof1h">Made for citizens</strong><span data-t="proof1p">Start with your life situation</span></div></div>
+      <div class="proof-item"><span class="proof-icon" aria-hidden="true">02</span><div><strong data-t="proof2h">Your language, your pace</strong><span data-t="proof2p">English, Hindi and Tamil</span></div></div>
+      <div class="proof-item"><span class="proof-icon" aria-hidden="true">03</span><div><strong data-t="proof3h">Clear next steps</strong><span data-t="proof3p">Eligibility, documents and applying</span></div></div>
+    </div>
+  </section>
+
+  <section id="cats" class="wrap cats" aria-labelledby="h-pick">
+    <h2 id="h-pick" data-t="homePick"></h2>
+    <p class="cats-intro" data-t="homePickP">Choose the option that best describes you. We’ll guide you from there.</p>
+    <div id="grid" class="grid10"></div>
+  </section>
+
+  <section id="how" class="how-section">
+    <div class="wrap how-inner">
+      <div class="how-heading"><p class="section-kicker" data-t="howKicker">A clearer path to support</p><h2 data-t="howTitle">From your situation to your next step.</h2><p data-t="howDesc">No need to know scheme names in advance. Start with a few simple details.</p></div>
+      <div class="how-steps">
+        <article class="how-step"><span>1</span><h3 data-t="how1h">Choose your category</h3><p data-t="how1p">Tell us which group best describes you.</p></article>
+        <article class="how-step"><span>2</span><h3 data-t="how2h">Share a few details</h3><p data-t="how2p">Answer simple questions by voice or on screen.</p></article>
+        <article class="how-step"><span>3</span><h3 data-t="how3h">Explore matching schemes</h3><p data-t="how3p">Review eligibility, required documents and official links.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-in"><div class="foot-brand"><strong>Yojana Saathi</strong><span data-t="footTag">Helping you navigate public benefits.</span></div><p data-t="disc"></p></div>
+</footer>
+<script src="js/i18n.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

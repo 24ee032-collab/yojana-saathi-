@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find your schemes - Yojana Saathi</title>
+<meta name="description" content="Answer a few questions by voice in English, Hindi or Tamil and see the government schemes you qualify for, with the procedure, documents and official links.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@500;700;800&family=Anek+Devanagari:wght@500;700;800&family=Anek+Tamil:wght@500;700;800&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#26307B">
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body>
+<div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+<a class="skip" href="#finder" data-t="skip">Skip to main content</a>
+
+<div class="util">
+  <div class="wrap util-in">
+    <span class="util-note" data-t="notOfficial">Independent citizen-help tool. Not an official government website.</span>
+    <div class="util-tools">
+      <div class="grp" role="group">
+        <button id="fs-" data-ta="fsDec">A-</button><button id="fs0" data-ta="fsNorm">A</button><button id="fs+" data-ta="fsInc">A+</button>
+      </div>
+      <button id="contrast" class="solo" aria-pressed="false" data-t="contrast">High contrast</button>
+    </div>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap head-in">
+    <a class="brand" href="/" aria-label="Home">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="10" fill="#26307B"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fff" stroke-width="2"/><path d="M24 11v26M11 24h26M15 15l18 18M33 15 15 33" stroke="#fff" stroke-width="1.1"/><circle cx="24" cy="24" r="3.4" fill="#EBA81B"/></svg>
+      <h1 id="ttl">Yojana Saathi</h1>
+    </a>
+    <nav data-ta="mainNav">
+      <a href="/" data-t="navHome">Home</a><a href="#finder" data-t="nFind">Find schemes</a><a href="#library" data-t="nLib">All schemes</a><a href="#how" data-t="nHow">How it works</a><a href="#help" data-t="nHelp">Help</a>
+    </nav>
+    <div class="langs" role="group" data-ta="langLabel">
+      <button id="l-0" class="on" lang="en">English</button><button id="l-1" lang="hi">हिन्दी</button><button id="l-2" lang="ta">தமிழ்</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section class="intro">
+    <div id="catpill" class="catpill" hidden></div>
+    <h2 data-t="heroH">Find the government schemes you qualify for</h2>
+    <p data-t="heroP"></p>
+  </section>
+
+  <div class="cols">
+    <section id="finder" class="sheet" aria-labelledby="h-find">
+      <h2 id="h-find" data-t="s1">Share your details</h2>
+
+      <div class="tabs" role="tablist">
+        <button id="t-i" class="on" role="tab" aria-selected="true" data-t="tabI">Voice interview</button>
+        <button id="t-v" role="tab" aria-selected="false" data-t="tabV">Speak freely</button>
+        <button id="t-f" role="tab" aria-selected="false" data-t="tabF">Fill form</button>
+      </div>
+
+      <!-- guided voice interview -->
+      <div id="p-i" class="tp on">
+        <div id="iv-start">
+          <p class="lead" data-t="iIntro"></p>
+          <button class="btn go" id="iv-go" type="button"><span aria-hidden="true">🎙</span> <span data-t="iStart">Start voice interview</span></button>
+          <div class="vcheck" id="vc">
+            <b data-t="vcT"></b>
+            <ul><li id="vc-s"></li><li id="vc-l"></li></ul>
+            <button class="btn sm" id="vc-test" type="button" data-t="vcTest"></button>
+            <p class="note" id="vc-tip" data-t="vcTip" hidden></p>
+          </div>
+        </div>
+        <div id="iv-run" hidden>
+          <div class="prog"><span id="iv-n" class="prog-t"></span><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="iv-bar"><i id="iv-fill"></i></div></div>
+          <p id="iv-q" class="q" aria-live="assertive"></p>
+          <p id="iv-status" class="status" role="status"></p>
+          <button id="iv-mic" class="mic" type="button"><span id="iv-micT"></span></button>
+          <div id="iv-said" class="said" hidden></div>
+          <div id="iv-chips" class="opts"></div>
+          <div id="iv-num" class="numrow" hidden>
+            <label for="iv-in" class="sr" data-t="iType"></label>
+            <input id="iv-in" type="number" inputmode="numeric" min="0">
+            <button class="btn pri" id="iv-ok" type="button" data-t="iEnter"></button>
+          </div>
+          <p id="iv-msg" class="note" role="status"></p>
+          <div class="row ctl">
+            <button class="btn sm" id="iv-rep" type="button" data-t="iRepeat"></button>
+            <button class="btn sm" id="iv-back" type="button" data-t="iBack"></button>
+            <button class="btn sm" id="iv-skip" type="button" data-t="iSkip"></button>
+            <button class="btn sm" id="iv-restart" type="button" data-t="iRestart"></button>
+            <button class="btn sm" id="iv-stop" type="button" data-t="iStop"></button>
+          </div>
+        </div>
+        <div id="iv-done" hidden>
+          <p class="done" role="status"><span aria-hidden="true">✔</span> <span data-t="iDone"></span></p>
+          <p class="note" id="iv-dp" data-t="iDoneP"></p>
+          <div class="row"><button class="btn sm" id="iv-again" type="button" data-t="iRestart"></button></div>
+        </div>
+      </div>
+
+      <!-- free speech -->
+      <div id="p-v" class="tp">
+        <button id="mic" class="mic" type="button"><span id="micT">Tap and speak</span></button>
+        <p id="nov" class="note" hidden></p>
+        <label for="say" class="sr" data-t="yourWords">Your words</label>
+        <textarea id="say" rows="4"></textarea>
+        <div class="row">
+          <button class="btn pri" id="parse" type="button" data-t="parse">Understand my words</button>
+          <button class="btn" id="ex" type="button" data-t="ex">Try example</button>
+        </div>
+        <p class="note" data-t="tip"></p>
+      </div>
+
+      <!-- form -->
+      <div id="p-f" class="tp">
+        <div id="heard" class="heard" hidden role="status"></div>
+        <div class="grid" id="fields"></div>
+        <button class="btn go" id="find" type="button" data-t="find">Find my schemes</button>
+      </div>
+    </section>
+
+    <div class="side">
+      <aside id="saved" class="slip" aria-live="polite" aria-labelledby="h-slip">
+        <div class="slip-h"><h2 id="h-slip" data-t="svT">Your saved details</h2><span class="slip-n" data-t="svNote"></span></div>
+        <ul id="chips" class="slip-rows"></ul>
+        <p class="slip-hint" id="slip-hint" data-t="svNone"></p>
+        <button class="lnk" id="clear" type="button" data-t="svClear" hidden></button>
+      </aside>
+
+      <section id="results" class="res" aria-labelledby="h-res" aria-live="polite">
+        <h2 id="h-res" data-t="s2">Your schemes</h2>
+        <div id="out"><p class="empty" data-t="empty">Your matching schemes will appear here.</p></div>
+      </section>
+    </div>
+  </div>
+
+  <section id="library" class="block" aria-labelledby="h-lib">
+    <div class="block-h">
+      <h2 id="h-lib" data-t="libH">All schemes explained</h2>
+      <p class="lead" data-t="libP"></p>
+    </div>
+    <div class="lib">
+      <div class="rail">
+        <div class="searchbox"><label for="libQ" class="sr" data-t="libSearch"></label><input id="libQ" type="search" autocomplete="off"></div>
+        <div class="chipset" id="libFilter" role="group"></div>
+        <span id="libCount" class="libcount"></span>
+      </div>
+      <div id="libOut"></div>
+    </div>
+  </section>
+
+  <section id="how" class="block" aria-labelledby="h-h">
+    <div class="block-h"><h2 id="h-h" data-t="nHow">How it works</h2></div>
+    <ol class="steps3">
+      <li><b data-t="h1"></b><span data-t="h1d"></span></li>
+      <li><b data-t="h2"></b><span data-t="h2d"></span></li>
+      <li><b data-t="h3"></b><span data-t="h3d"></span></li>
+    </ol>
+  </section>
+
+  <section id="help" class="block" aria-labelledby="h-help">
+    <div class="block-h"><h2 id="h-help" data-t="nHelp">Help</h2></div>
+    <div class="faqs">
+      <details class="faq"><summary data-t="q1"></summary><p data-t="a1"></p></details>
+      <details class="faq"><summary data-t="q2"></summary><p data-t="a2"></p></details>
+      <details class="faq"><summary data-t="q3"></summary><p data-t="a3"></p></details>
+      <details class="faq"><summary data-t="q4"></summary><p data-t="a4"></p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p data-t="disc"></p>
+    <p class="small"><span>© Yojana Saathi.</span> <span data-t="small"></span></p>
+  </div>
+</footer>
+<script src="js/i18n.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
